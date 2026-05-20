@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7cdc7275ae6246888d9ca947a8255325" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="BookHavenModel.Books" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.Complaints" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.Genres" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.ReadingLists" Width="1.5" PointX="10.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.ReadingListStatuses" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.Reviews" Width="1.5" PointX="10.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.RoleApplications" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.Roles" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.UnfreezeApplications" Width="1.5" PointX="10.5" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookHavenModel.Users" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <AssociationConnector Association="BookHavenModel.FK_Books_Author" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Complaints_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_ReadingLists_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Reviews_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_UnfreezeApps_Books" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Complaints_Reviews" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Complaints_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_ReadingLists_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_ReadingLists_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Reviews_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_RoleApplications_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.FK_UnfreezeApps_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookHavenModel.BookGenres" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

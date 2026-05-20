@@ -1,0 +1,54 @@
+﻿<Window x:Class="BookHaven.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BookHaven" Height="700" Width="1100"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- SIDEBAR -->
+        <StackPanel Grid.Column="0" Background="#12121f">
+            <Button x:Name="BtnCatalog" Width="48" Height="48" Margin="8"
+                    ToolTip="Каталог книг" Click="BtnCatalog_Click"
+                    Background="Transparent" BorderThickness="0">
+                <TextBlock Text="📚" FontSize="22"/>
+            </Button>
+            <Button x:Name="BtnLists" Width="48" Height="48" Margin="8"
+                    ToolTip="Списки книг" Click="BtnLists_Click"
+                    Background="Transparent" BorderThickness="0">
+                <TextBlock Text="📋" FontSize="22"/>
+            </Button>
+            <Button x:Name="BtnProfile" Width="48" Height="48" Margin="8"
+                    ToolTip="Профиль" Click="BtnProfile_Click"
+                    Background="Transparent" BorderThickness="0">
+                <TextBlock Text="👤" FontSize="22"/>
+            </Button>
+            <Button x:Name="BtnAuthor" Width="48" Height="48" Margin="8"
+                    ToolTip="Страница автора" Click="BtnAuthor_Click"
+                    Background="Transparent" BorderThickness="0"
+                    Visibility="Collapsed">
+                <TextBlock Text="✍️" FontSize="22"/>
+            </Button>
+            <Button x:Name="BtnAdmin" Width="48" Height="48" Margin="8"
+                    ToolTip="Администрирование" Click="BtnAdmin_Click"
+                    Background="Transparent" BorderThickness="0"
+                    Visibility="Collapsed">
+                <TextBlock Text="🛠️" FontSize="22"/>
+            </Button>
+            <Button x:Name="BtnFrozen" Width="48" Height="48" Margin="8"
+                    ToolTip="Аккаунт заморожен!" Click="BtnFrozen_Click"
+                    Background="Transparent" BorderThickness="0"
+                    Visibility="Collapsed">
+                <TextBlock Text="❄️" FontSize="22"/>
+            </Button>
+        </StackPanel>
+
+        <!-- КОНТЕНТ -->
+        <Frame x:Name="MainFrame" Grid.Column="1"
+               NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
