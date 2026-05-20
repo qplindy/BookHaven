@@ -33,7 +33,7 @@ namespace BookHaven.Views
             else
             {
                 ErrorText.Text = "Неверный логин или пароль";
-            }
+            }e
         }
 
         private void RegisterBtn_Click(object sender, RoutedEventArgs e)
