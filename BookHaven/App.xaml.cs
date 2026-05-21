@@ -1,17 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using BookHaven.Views;
 using System.Windows;
+using System.Windows.Navigation;
 
 namespace BookHaven
 {
-    /// <summary>
-    /// Логика взаимодействия для App.xaml
-    /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+
+            var window = new NavigationWindow();
+            window.Title = "BookHaven";
+            window.Width = 480;
+            window.Height = 560;
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.ShowsNavigationUI = false;
+            window.Navigate(new AuthPage());
+            window.Show();
+        }
     }
 }
